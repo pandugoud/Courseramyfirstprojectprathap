@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple JS Buttons</title>
+</head>
+<body>
+
+    <h2>JavaScript Button Example</h2>
+
+    <button onclick="sayHello()">Say Hello</button>
+    <button onclick="changeText()">Change Text</button>
+
+    <p id="text">This text will change.</p>
+
+    <script>
+        function sayHello() {
+            alert("Hello!");
+        }
+
+        function changeText() {
+            document.getElementById("text").innerHTML = "Text changed using JavaScript!";
+        }
+    </script>
+
+</body>
+</html>
