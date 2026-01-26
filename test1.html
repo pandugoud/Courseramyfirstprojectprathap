@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images with JS Buttons</title>
+</head>
+<body>
+
+    <h2>JavaScript Buttons with Images</h2>
+
+    <img id="myImage" src="image1.jpg" width="200" alt="Sample Image">
+
+    <br><br>
+
+    <button onclick="showImage()">Show Image</button>
+    <button onclick="hideImage()">Hide Image</button>
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+        function showImage() {
+            document.getElementById("myImage").style.display = "block";
+        }
+
+        function hideImage() {
+            document.getElementById("myImage").style.display = "none";
+        }
+
+        function changeImage() {
+            document.getElementById("myImage").src = "image2.jpg";
+        }
+    </script>
+
+</body>
+</html>
